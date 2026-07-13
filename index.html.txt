@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Floreciendo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .flower {
+            position: relative;
+            animation: grow 4s ease-in-out infinite alternate;
+        }
+
+        .center {
+            width: 40px;
+            height: 40px;
+            background: #ffdb58;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(255, 219, 88, 0.8);
+        }
+
+        .petal {
+            position: absolute;
+            width: 35px;
+            height: 90px;
+            background: linear-gradient(to top, #ff4081, #ff80ab);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            top: -90px;
+            left: -17.5px;
+            transform-origin: bottom center;
+            opacity: 0.3;
+            transform: scale(0) rotate(var(--i));
+            animation: bloom 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes bloom {
+            0% {
+                transform: scale(0) rotate(var(--i));
+                opacity: 0.3;
+                filter: hue
+[10:10 p. m., 12/7/2026] fabrizziocarias: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor Floreciendo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a1a;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .flower {
+            position: relative;
+            animation: grow 4s ease-in-out infinite alternate;
+        }
+
+        .center {
+            width: 40px;
+            height: 40px;
+            background: #ffdb58;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(255, 219, 88, 0.8);
+        }
+
+        .petal {
+            position: absolute;
+            width: 35px;
+            height: 90px;
+            background: linear-gradient(to top, #ff4081, #ff80ab);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            top: -90px;
+            left: -17.5px;
+            transform-origin: bottom center;
+            opacity: 0.3;
+            transform: scale(0) rotate(var(--i));
+            animation: bloom 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes bloom {
+            0% {
+                transform: scale(0) rotate(var(--i));
+                opacity: 0.3;
+                filter: hue-rotate(0deg);
+            }
+            50% {
+                opacity: 0.9;
+            }
+            100% {
+                transform: scale(1) rotate(var(--i));
+                opacity: 1;
+                filter: hue-rotate(45deg);
+                box-shadow: 0 0 15px rgba(255, 64, 129, 0.5);
+            }
+        }
+
+        @keyframes grow {
+            0% { transform: scale(0.7); }
+            100% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flower">
+        <div class="center"></div>
+        <div class="petal" style="--i: 0deg;"></div>
+        <div class="petal" style="--i: 45deg;"></div>
+        <div class="petal" style="--i: 90deg;"></div>
+        <div class="petal" style="--i: 135deg;"></div>
+        <div class="petal" style="--i: 180deg;"></div>
+        <div class="petal" style="--i: 225deg;"></div>
+        <div class="petal" style="--i: 270deg;"></div>
+        <div class="petal" style="--i: 315deg;"></div>
+    </div>
+
+</body>
+</html>
